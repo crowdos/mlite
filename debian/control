@@ -19,7 +19,7 @@ Description: Useful classes originating from MeeGo Touch
 Package: libmlite-dev
 Architecture: any
 Section: libdevel
-Depends: fontconfig, ${misc:Depends}, ${shlibs:Depends}, libmlite5 (= ${binary:Version})
+Depends: fontconfig, ${misc:Depends}, ${shlibs:Depends}, libmlite5 (= ${binary:Version}), pkg-config
 Description: mlite development library
  Selected set of useful classes from meegotouch that do not require
  taking in all of meegotouch.
