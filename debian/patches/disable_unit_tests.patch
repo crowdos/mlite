@@ -1,0 +1,12 @@
+--- a/mlite/mlite.pro
++++ b/mlite/mlite.pro
+@@ -1,8 +1,4 @@
+ TEMPLATE = subdirs
+ CONFIG += ordered
+ SUBDIRS = \
+-        src \
+-        tests \
+-
+-# Adds 'coverage' make target
+-include(coverage.pri)
++        src
