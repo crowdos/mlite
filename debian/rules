@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+VERSION=$(shell dpkg-parsechangelog -S version | cut -d - -f 1)
+%:
+	dh $@ --builddirectory=mlite --sourcedirectory=mlite --parallel --with quilt
+
+override_dh_auto_build:
+	cd mlite && qmake VERSION=$(VERSION)
+
+override_dh_install:
+	dh_install --fail-missing

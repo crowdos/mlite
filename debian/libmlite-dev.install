@@ -1,0 +1,3 @@
+usr/lib/*.so
+usr/include/mlite5/*
+usr/lib/pkgconfig/mlite5.pc

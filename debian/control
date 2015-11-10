@@ -1,0 +1,28 @@
+Source: mlite
+Section: libs
+Priority: optional
+Maintainer: Mohammed Sameer <msameer@foolab.org>
+Build-Depends: debhelper (>= 9),
+	       qtbase5-dev,
+	       qttools5-dev-tools,
+	       libdconf-dev,
+	       quilt
+Standards-Version: 3.9.6
+
+Package: libmlite5
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Useful classes originating from MeeGo Touch
+ Selected set of useful classes from meegotouch that do not require
+ taking in all of meegotouch.
+
+Package: libmlite-dev
+Architecture: any
+Section: libdevel
+Depends: fontconfig, ${misc:Depends}, ${shlibs:Depends}, libmlite5 (= ${binary:Version})
+Description: mlite development library
+ Selected set of useful classes from meegotouch that do not require
+ taking in all of meegotouch.
+ .
+ This package contains the headers and libraries needed for developing
+ applications using libmlite
