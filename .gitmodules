@@ -1,0 +1,3 @@
+[submodule "mlite"]
+	path = mlite
+	url = https://git.merproject.org/mer-core/mlite.git
